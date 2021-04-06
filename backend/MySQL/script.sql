@@ -4,7 +4,6 @@ USE CosmeticsBD;
 DROP TABLE IF EXISTS product;
 DROP TABLE IF EXISTS purchase;
 
-
 CREATE TABLE product(
     identifier INT UNSIGNED PRIMARY KEY,
     description VARCHAR(50) UNIQUE NOT NULL, 

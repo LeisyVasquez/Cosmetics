@@ -1,9 +1,11 @@
-const {Router} = require('express'); 
-const router = Router(); 
+const { Router } = require('express');
+const router = Router();
 
+const {
+    getMain
+} = require('./controller');
 
-router.get('/',(req, res) =>{
-    res.send('<h1>Bienvenido al Backend de la aplicación Cosmetics</h1>')
-}); 
+//Rutas del backend
+router.get('/', getMain);
 
-module.exports = router; 
+module.exports = router;
