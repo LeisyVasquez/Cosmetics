@@ -1,12 +1,14 @@
-import { StrictMode } from "react";
+
+import React from 'react'
 import ReactDOM from "react-dom";
+import App from "./router/App"
 
-import App from "./App";
+//Estilos de boostrap
+import 'bootstrap/dist/css/bootstrap.min.css';
 
-const rootElement = document.getElementById("root");
 ReactDOM.render(
-  <StrictMode>
+  <React.StrictMode>
     <App />
-  </StrictMode>,
-  rootElement
+  </React.StrictMode>,
+  document.getElementById('root')
 );

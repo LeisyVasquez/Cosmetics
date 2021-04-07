@@ -1,4 +1,36 @@
-.App {
-  font-family: sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+body {
+  font-family: 'Varela Round', sans-serif;
+  background-image: url(https://raw.githubusercontent.com/JuanManuel-GAA/equipo7_gaa_ppi2020/master/Recursos%20gu%C3%ADa/DwGmPbdXQAAbzVd.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  padding: 5%;
+}
+
+.container{
+
+  width: 800px;
+  height: 450px;
+  border-radius: 6px;
+  box-shadow: 0 10px 30px #ffffff70;
+  border: 1px solid #ffffff40; 
+  -webkit-backdrop-filter: blur(15px);
+  backdrop-filter: blur(15px);
+  background-color: rgba(0, 64, 255,0.1); 
   text-align: center;
+}
+
+
+.text{
+  color: white; 
+}
+
+.textTable{
+  color: white; 
+}
+
+.finishButton{
+  margin-left: 37%;
+  display: block; 
+  
 }
