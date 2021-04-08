@@ -29,12 +29,18 @@ module.exports = {
         })
         query = query.next();
         const rows = await cnn_mysql.promise().execute(query);
-        if (rows.affectedRows > 0) res.status(201)
+        if (rows.affectedRows < 0) res.status(201)
         else res.status(500)
     }, 
-    getOrder: async (req,res) =>{
+    getOrder: async (req,res) => {
         const rows = await cnn_mysql.promise().execute('SELECT numeroOrden, subtotal, totalIva, totalCompra FROM compra');
-        
+
         res.json({data: rows[0]}); 
+    }, 
+    insertOrder: async(req,res) =>{ 
+        const {numeroOrden, subtotal, totalIva, totalCompra} = req.body; 
+        const  rows = await cnn_mysql.promise().execute('INSERT INTO `compra` (`numeroOrden`, `subtotal`, `totalIva`, `totalCompra`) VALUES (?, ?, ?, ?)', [numeroOrden, subtotal, totalIva, totalCompra]); 
+        if (rows[0].affectedRows) res.status(201).send('ok')
+         else res.status(500).send('mal')
     }
 }
