@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 import '../styles.css';
 
 import MakePurchase from '../pages/MakePurchase';
+import PurchaseTotal from '../pages/PurchaseTotal';
 
 function App() {
     return (
@@ -10,6 +11,7 @@ function App() {
             <BrowserRouter>
                 <Switch>
                     <Route path="/makePurchase" component={MakePurchase} />
+                    <Route path="/purchaseTotal" component={PurchaseTotal} />
                 </Switch>
             </BrowserRouter>
         </div>

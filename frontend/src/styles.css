@@ -25,12 +25,16 @@ body {
   color: white; 
 }
 
-.textTable{
-  color: white; 
-}
+
 
 .finishButton{
   margin-left: 37%;
   display: block; 
-  
+}
+
+
+.iconDelete{
+    width: 2.2vh;
+    height: 2.2vh;
+    
 }
