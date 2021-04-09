@@ -1,16 +1,19 @@
 {
   "name": "react",
   "version": "1.0.0",
-  "description": "React example starter project",
+  "description": "React project Cosmetics",
   "keywords": [
     "react",
     "starter"
   ],
   "main": "src/index.js",
   "dependencies": {
+    "bootstrap": "^4.6.0",
     "react": "17.0.2",
     "react-dom": "17.0.2",
-    "react-scripts": "4.0.0"
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "4.0.0",
+    "sweetalert2": "^10.16.0"
   },
   "devDependencies": {
     "@babel/runtime": "7.13.8",

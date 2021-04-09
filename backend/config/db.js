@@ -2,7 +2,7 @@ const mysql = require('mysql2')
 require('dotenv').config({ path: '../.env' })
 
 //Se le envia el objeto de configuracion
-const connectionMysql = mysql.createConnection({
+const connectionMysql = mysql.createPool({
     host: process.env.DB_HOST,
     user: process.env.DB_USER,
     database: process.env.DB_DATABASE,
