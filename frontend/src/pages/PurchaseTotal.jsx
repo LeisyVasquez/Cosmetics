@@ -1,10 +1,11 @@
 import React from 'react';
-
-import PurchaseTotal from '../components/purchaseTotal'; 
+import Nav from '../components/nav'; 
+import PurchaseTotal from '../components/purchaseTotal';
 
 const purchaseTotal = () => {
     return(
         <div>
+            <Nav />
             <PurchaseTotal />
         </div>
     )

@@ -1,14 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
 body {
   font-family: 'Varela Round', sans-serif;
   background-image: url(https://raw.githubusercontent.com/JuanManuel-GAA/equipo7_gaa_ppi2020/master/Recursos%20gu%C3%ADa/DwGmPbdXQAAbzVd.jpg);
   background-attachment: fixed;
   background-size: cover;
-  padding: 5%;
+  
 }
 
 .container{
-
   width: 800px;
   height: 450px;
   border-radius: 6px;
@@ -20,21 +20,39 @@ body {
   text-align: center;
 }
 
+.row{
+  padding: 5%;
+}
+
+.purchaseTotal {
+  padding: 5%;
+}
 
 .text{
   color: white; 
+  font-family: 'Varela Round', sans-serif;
 }
-
-
 
 .finishButton{
   margin-left: 37%;
   display: block; 
 }
 
-
 .iconDelete{
-    width: 2.2vh;
-    height: 2.2vh;
-    
+  width: 2.2vh;
+  height: 2.2vh;  
 }
+
+.itemNav{
+  margin-left: 60%;
+  float:left; 
+}
+
+.developerName{
+  color: white; 
+  text-align: center;
+  margin-top: 15%;
+}
+  
+
+

@@ -21,7 +21,8 @@ const PurchaseTotal = () => {
     }
 
     return (
-        <div className="container mt-5 w-50 col">
+        <div className="purchaseTotal">
+        <div className="container w-50 col">
             <h1 className="text mt-1">Total Compras</h1>
             <table className="table table-bordered mt-5 table-sm ">
                 <thead className="text">
@@ -47,6 +48,7 @@ const PurchaseTotal = () => {
                 </tbody>
             </table>
 
+        </div>
         </div>
     )
 }
